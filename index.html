@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario para Nuevo Ingreso</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form id="nuevoIngresoForm">
+			<div class="logo-container">
+				<label for="logoInput" class="logo-label">
+					<img src="..//INVESTIGACION APLICADA/img/logoudb.png" alt="Logo Institución" id="logo" />
+				</label>
+				<input type="file" id="logoInput" accept="image/*" style="display:none">
+			</div>
+			<h2>Formulario para Nuevo Ingreso</h2>
+			<div class="form-group">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required>
+				<div class="mensaje" id="nombreMensaje"></div>
+			</div>
+			<div class="form-group">
+				<label for="correo">Correo electrónico:</label>
+				<input type="email" id="correo" name="correo" required>
+				<div class="mensaje" id="correoMensaje"></div>
+			</div>
+			<div class="form-group">
+				<label for="telefono">Teléfono:</label>
+				<input type="text" id="telefono" name="telefono" required maxlength="8">
+				<div class="mensaje" id="telefonoMensaje"></div>
+			</div>
+			<div class="form-group">
+				<label for="password">Contraseña:</label>
+				<input type="password" id="password" name="password" required>
+				<div class="mensaje" id="passwordMensaje"></div>
+			</div>
+			<button type="submit" id="enviarBtn">Enviar</button>
+			<div class="mensaje-exito" id="exitoMensaje"></div>
+		</form>
+	</div>
+	<script src="Investigacion.js"></script>
+</body>
+</html>
